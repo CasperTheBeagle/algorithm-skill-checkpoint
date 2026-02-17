@@ -1,7 +1,8 @@
 function findStudentById(students, id) {
   // Your code here
+  return students.find(student => student.id === id) || null;
+  // find method: ไล่หา student ที่ id ตรงเป้า ถ้าเจอเอาตัวนั้นกลับ ถ้าไม่เจอก็ return null ไป 
 }
-
 // Test case
 const students = [
   { id: 302, name: "Emily Carter" },

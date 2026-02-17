@@ -1,5 +1,6 @@
 function findProductPrice(products, name) {
   // Your code here
+  return products.find(product => product.name === name)?.price || -1;
 }
 
 // Test case
